@@ -39,3 +39,9 @@ Route::post('customers/create', 'App\Http\Controllers\CustomerController@createC
 Route::put('customers/{id}', 'App\Http\Controllers\CustomerController@updateCustomer');
 Route::delete('customers/{id}', 'App\Http\Controllers\CustomerController@deleteCustomer');
 
+Route::get('users', 'App\Http\Controllers\UsersController@getAllUsers');
+Route::get('user/{id}', 'App\Http\Controllers\UsersController@getUser');
+Route::post('user/create', 'App\Http\Controllers\UsersController@createUser');
+Route::put('user/{id}', 'App\Http\Controllers\UsersController@updateUser');
+Route::delete('user/{id}', 'App\Http\Controllers\UsersController@deleteUser');
+
