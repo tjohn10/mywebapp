@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50749589-e01d-4b38-a6ae-53ad12a7cc5a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +194,8 @@
       <workItem from="1606071631411" duration="10000" />
       <workItem from="1606071684539" duration="6393000" />
       <workItem from="1606272067503" duration="1239000" />
-      <workItem from="1606368616091" duration="2562000" />
+      <workItem from="1606368616091" duration="3826000" />
+      <workItem from="1606425316229" duration="806000" />
     </task>
     <servers />
   </component>
@@ -213,6 +212,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
