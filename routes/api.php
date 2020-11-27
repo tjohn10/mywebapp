@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
+Route::group(['middleware' => 'auth:api'], function(){
+    Route::post('details', 'App\Http\Controllers\AuthController@details');
+});
 Route::group([
     'prefix' => 'auth',
     'middleware' => 'cors'
@@ -25,7 +27,7 @@ Route::group([
         'middleware' => 'auth:api'
     ], function () {
         Route::get('logout', 'App\Http\Controllers\AuthController@logout');
-        Route::get('user', 'App\Http\Controllers\AuthController@user');
+        Route::get('details', 'App\Http\Controllers\AuthController@details');
     });
 });
 
