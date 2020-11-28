@@ -76,7 +76,7 @@ class AuthController extends Controller
             'name' => 'required',
             'email' => 'required|email',
             'mobile_num' => 'required|string',
-            'profile' => 'required|string',
+            'profile' => 'required|paragraph',
             'password' => 'required',
             'c_password' => 'required|same:password',
         ]);
