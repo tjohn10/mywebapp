@@ -18,6 +18,7 @@ class UsersController extends Controller
         $user->name = $request->name;
         $user->email = $request->name;
         $user->mobile_num = $request->mobile_num;
+        $user->type = $request->type;
         $user->profile = $request->profile;
         $user->password = $request->password;
         $user->save();
@@ -44,6 +45,7 @@ class UsersController extends Controller
             $user->name = is_null($request->name) ? $user->name : $request->name;
             $user->email = is_null($request->email) ? $user->email : $request->email;
             $user->mobile_num = is_null($request->mobile_num) ? $user->mobile_num : $request->mobile_num;
+            $user->type = is_null($request->type) ? $user->type : $request->type;
             $user->profile = is_null($request->profile) ? $user->profile : $request->profile;
             $user->password = is_null($request->password) ? $user->password : $request->password;
             $user->save();

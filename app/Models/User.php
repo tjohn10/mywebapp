@@ -2,7 +2,10 @@
 
 namespace App\Models;
 
+use App\Notifications\MailResetPasswordNotification;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Support\Facades\App;
 use Laravel\Passport\HasApiTokens;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -21,8 +24,10 @@ class User extends Authenticatable
         'name',
         'email',
         'mobile_num',
+        'user_type',
         'profile',
         'password',
+
     ];
 
     /**
@@ -43,4 +48,19 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function sendPasswordResetNotification($token)
+    {
+        $this->notify(new MailResetPasswordNotification($token));
+    }
+
+    public function jobs(): HasMany
+    {
+        return $this->hasMany('App/Job');
+    }
+
+    public function reviews(): HasMany
+    {
+        return $this->hasMany('App/Review');
+    }
 }

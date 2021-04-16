@@ -19,7 +19,46 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50749589-e01d-4b38-a6ae-53ad12a7cc5a" name="Default Changelist" comment="" />
+    <list default="true" id="50749589-e01d-4b38-a6ae-53ad12a7cc5a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ForgotPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/JobController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ResetPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ReviewController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/AnalystAuth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/FacilitatorAuth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Job.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/OrderService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Review.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Service.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Notifications/MailResetPasswordNotification.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/JobFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/ReviewFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_27_012808_create_jobs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_27_012826_create_reviews_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_02_204506_create_services_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_03_112057_create_order_service_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/JobSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/ReviewSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0496fb6b-3ec7-4cb1-9f22-8f631a6e9fa3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0496fb6b-3ec7-4cb1-9f22-8f631a6e9fa3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dhub-new.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dhub-new.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -153,6 +192,7 @@
       <path value="$PROJECT_DIR$/vendor/league/oauth2-server" />
       <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
       <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kHqvJnic3L977PdfuD3gQ2n2x7" />
@@ -168,9 +208,11 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/hub" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -196,6 +238,81 @@
       <workItem from="1606425316229" duration="806000" />
       <workItem from="1606475328649" duration="10206000" />
       <workItem from="1606507661541" duration="2068000" />
+      <workItem from="1606565110372" duration="900000" />
+      <workItem from="1607371813501" duration="5728000" />
+      <workItem from="1611663920464" duration="459000" />
+      <workItem from="1611707696581" duration="2271000" />
+      <workItem from="1611713834364" duration="563000" />
+      <workItem from="1611748604611" duration="572000" />
+      <workItem from="1611756836773" duration="567000" />
+      <workItem from="1611775297648" duration="572000" />
+      <workItem from="1611793488353" duration="571000" />
+      <workItem from="1611858689520" duration="577000" />
+      <workItem from="1611940945676" duration="566000" />
+      <workItem from="1611954443801" duration="582000" />
+      <workItem from="1612127549216" duration="580000" />
+      <workItem from="1612187298967" duration="575000" />
+      <workItem from="1612192638123" duration="1238000" />
+      <workItem from="1612199411769" duration="2091000" />
+      <workItem from="1612210469715" duration="579000" />
+      <workItem from="1612258859906" duration="362000" />
+      <workItem from="1612262095296" duration="294000" />
+      <workItem from="1612262854492" duration="749000" />
+      <workItem from="1612270898501" duration="349000" />
+      <workItem from="1612346256672" duration="2518000" />
+      <workItem from="1612441715738" duration="580000" />
+      <workItem from="1612449124364" duration="3053000" />
+      <workItem from="1612473398845" duration="1183000" />
+      <workItem from="1612518660334" duration="1784000" />
+      <workItem from="1612529605169" duration="1283000" />
+      <workItem from="1612703292437" duration="585000" />
+      <workItem from="1612778896551" duration="821000" />
+      <workItem from="1612876900215" duration="381000" />
+      <workItem from="1612912400568" duration="483000" />
+      <workItem from="1613126929058" duration="1192000" />
+      <workItem from="1614432820260" duration="300000" />
+      <workItem from="1614433402663" duration="498000" />
+      <workItem from="1614436190848" duration="547000" />
+      <workItem from="1614461363934" duration="264000" />
+      <workItem from="1614527934607" duration="770000" />
+      <workItem from="1615047481120" duration="90000" />
+      <workItem from="1615116830093" duration="662000" />
+      <workItem from="1615150175111" duration="618000" />
+      <workItem from="1615209445244" duration="1674000" />
+      <workItem from="1615212021385" duration="962000" />
+      <workItem from="1615539406704" duration="581000" />
+      <workItem from="1615666385436" duration="588000" />
+      <workItem from="1615831951489" duration="587000" />
+      <workItem from="1615990195312" duration="595000" />
+      <workItem from="1616145872955" duration="590000" />
+      <workItem from="1616187474296" duration="1188000" />
+      <workItem from="1616278933288" duration="636000" />
+      <workItem from="1616359617321" duration="893000" />
+      <workItem from="1616415346350" duration="598000" />
+      <workItem from="1616437386708" duration="1191000" />
+      <workItem from="1616519532140" duration="2722000" />
+      <workItem from="1616605911230" duration="1206000" />
+      <workItem from="1616608347992" duration="1783000" />
+      <workItem from="1616800531047" duration="1206000" />
+      <workItem from="1616894618491" duration="662000" />
+      <workItem from="1616958707211" duration="2359000" />
+      <workItem from="1617183257156" duration="1181000" />
+      <workItem from="1617216148940" duration="584000" />
+      <workItem from="1617344879223" duration="12675000" />
+      <workItem from="1617695034280" duration="674000" />
+      <workItem from="1617700920231" duration="822000" />
+      <workItem from="1617732215078" duration="573000" />
+      <workItem from="1617799249613" duration="544000" />
+      <workItem from="1617821611884" duration="581000" />
+      <workItem from="1617879994130" duration="563000" />
+      <workItem from="1617911631322" duration="603000" />
+      <workItem from="1617992946436" duration="688000" />
+      <workItem from="1618017995694" duration="743000" />
+      <workItem from="1618056569316" duration="3584000" />
+      <workItem from="1618247592644" duration="598000" />
+      <workItem from="1618348208459" duration="690000" />
+      <workItem from="1618466498891" duration="618000" />
+      <workItem from="1618519750738" duration="2005000" />
     </task>
     <servers />
   </component>
@@ -216,40 +333,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="1043" y="215" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605378739702">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="1043" y="215" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1605378739702" />
-    <state x="1173" y="468" width="523" height="178" key="ComposerInitDialogKey" timestamp="1605383278805">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="1173" y="468" width="523" height="178" key="ComposerInitDialogKey/72.27.1848.1053@72.27.1848.1053" timestamp="1605383278805" />
-    <state width="858" height="275" key="GridCell.Tab.0.bottom" timestamp="1605529407413">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state width="858" height="275" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1605529407413" />
-    <state width="858" height="275" key="GridCell.Tab.0.center" timestamp="1605529407413">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state width="858" height="275" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1605529407413" />
-    <state width="858" height="275" key="GridCell.Tab.0.left" timestamp="1605529407412">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state width="858" height="275" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1605529407412" />
-    <state width="858" height="275" key="GridCell.Tab.0.right" timestamp="1605529407413">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state width="858" height="275" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1605529407413" />
-    <state x="707" y="326" width="568" height="462" key="refactoring.ChangeSignatureDialog" timestamp="1606477996337">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="707" y="326" width="568" height="462" key="refactoring.ChangeSignatureDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1606477996337" />
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1606371793213">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state x="659" y="259" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1606371793213" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

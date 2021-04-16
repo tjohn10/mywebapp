@@ -27,13 +27,15 @@ class AuthController extends Controller
             'name' => 'required|string',
             'email' => 'required|string|email|unique:users',
             'mobile_num' => 'required|string',
-            'profile' => 'required|string',
+            'user_type' => 'required|string',
+            'profile' => 'string',
             'password' => 'required|string|confirmed'
         ]);
         $user = new User([
             'name' => $request->name,
             'email' => $request->email,
             'mobile_num' => $request->mobile_num,
+            'user_type' => $request->user_type,
             'profile' => $request->profile,
             'password' => bcrypt($request->password)
         ]);
@@ -75,8 +77,9 @@ class AuthController extends Controller
         $validator = Validator::make($request->all(), [
             'name' => 'required',
             'email' => 'required|email',
+            'type' => 'integer',
             'mobile_num' => 'required|string',
-            'profile' => 'required|paragraph',
+            'profile' => 'paragraph',
             'password' => 'required',
             'c_password' => 'required|same:password',
         ]);
@@ -85,6 +88,7 @@ class AuthController extends Controller
         }
         $input = $request->all();
         $input['password'] = bcrypt($input['password']);
+        $request['type'] = $request['type'] ? $request['type']  : 0;
         $user = User::create($input);
         $success['token'] =  $user->createToken('MyApp')-> accessToken;
         $success['name'] =  $user->name;
@@ -99,5 +103,6 @@ class AuthController extends Controller
     {
         $user = Auth::user();
         return response()->json(['success' => $user], $this-> successStatus);
+//        return response()->json(auth()->user());
     }
 }
