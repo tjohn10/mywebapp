@@ -20,44 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50749589-e01d-4b38-a6ae-53ad12a7cc5a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ForgotPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/JobController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ResetPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ReviewController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/AnalystAuth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/FacilitatorAuth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Job.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/OrderService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Review.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Service.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Notifications/MailResetPasswordNotification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/JobFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/ReviewFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_27_012808_create_jobs_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_27_012826_create_reviews_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_02_204506_create_services_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_03_112057_create_order_service_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/JobSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/ReviewSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0496fb6b-3ec7-4cb1-9f22-8f631a6e9fa3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0496fb6b-3ec7-4cb1-9f22-8f631a6e9fa3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dhub-new.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dhub-new.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/OrdersController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SuperAdminController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckRole.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Orders.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_22_205304_create_roles_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_22_205331_create_role_user_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_28_143321_create_orders_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +185,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/hub" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Project-Dhub" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -312,7 +287,30 @@
       <workItem from="1618247592644" duration="598000" />
       <workItem from="1618348208459" duration="690000" />
       <workItem from="1618466498891" duration="618000" />
-      <workItem from="1618519750738" duration="2005000" />
+      <workItem from="1618519750738" duration="2420000" />
+      <workItem from="1618564236230" duration="605000" />
+      <workItem from="1618574944512" duration="586000" />
+      <workItem from="1618587616689" duration="598000" />
+      <workItem from="1618621240491" duration="594000" />
+      <workItem from="1618627124613" duration="1198000" />
+      <workItem from="1618641541184" duration="127000" />
+      <workItem from="1618687168856" duration="575000" />
+      <workItem from="1619084075436" duration="1193000" />
+      <workItem from="1619104444743" duration="592000" />
+      <workItem from="1619121547666" duration="4363000" />
+      <workItem from="1619412701282" duration="1294000" />
+      <workItem from="1619427427893" duration="474000" />
+      <workItem from="1619430243268" duration="665000" />
+      <workItem from="1619461847944" duration="598000" />
+      <workItem from="1619518045141" duration="2110000" />
+      <workItem from="1619657582747" duration="588000" />
+      <workItem from="1619766495054" duration="1184000" />
+      <workItem from="1619903115040" duration="875000" />
+      <workItem from="1619933616142" duration="708000" />
+      <workItem from="1620040538610" duration="577000" />
+      <workItem from="1620074767073" duration="599000" />
+      <workItem from="1620234045817" duration="597000" />
+      <workItem from="1620406969066" duration="2086000" />
     </task>
     <servers />
   </component>
