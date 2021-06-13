@@ -5,17 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Orders extends Model
+class WorkOrders extends Model
 {
     protected $fillable = [
-      'name',
-      'delivery_date',
-      'payment_option',
-      'order_status'
+        'name',
+        'delivery_date',
+        'payment_option',
+        'order_status'
     ];
 
-    public function customer() {
-        return $this->belongsTo(Customers::class);
+    public function user() {
+        return $this->belongsTo(Users::class);
     }
 
     public function service() {

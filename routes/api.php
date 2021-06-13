@@ -33,9 +33,28 @@ Route::group([
 
 Route::get('customers', 'App\Http\Controllers\CustomerController@getAllCustomers');
 Route::get('customers/{id}', 'App\Http\Controllers\CustomerController@getCustomer');
-Route::post('customers/create', 'App\Http\Controllers\CustomerController@createCustomer');
+Route::post('customer/create', 'App\Http\Controllers\CustomerController@createCustomer');
 Route::put('customers/{id}', 'App\Http\Controllers\CustomerController@updateCustomer');
 Route::delete('customers/{id}', 'App\Http\Controllers\CustomerController@deleteCustomer');
+
+
+Route::get('services', 'App\Http\Controllers\ServiceController@getAllServices');
+Route::post('service/create', 'App\Http\Controllers\ServiceController@store');
+Route::get('service/{id}', 'App\Http\Controllers\ServiceController@getService');
+Route::put('service/{id}', 'App\Http\Controllers\ServiceController@updateService');
+Route::delete('service/{id}', 'App\Http\Controllers\ServiceController@deleteService');
+
+
+Route::post('order/create', 'App\Http\Controllers\OrderController@store');
+Route::get('orders', 'App\Http\Controllers\OrderController@index');
+Route::get('orders/{id}', 'App\Http\Controllers\OrderController@getOrder');
+
+Route::post('workorder/create', 'App\Http\Controllers\WorkOrderController@createWorkOrder');
+Route::get('workorders', 'App\Http\Controllers\WorkOrderController@index');
+Route::get('workorder/{id}', 'App\Http\Controllers\WorkOrderController@getOrder');
+Route::put('workorder/{id}', 'App\Http\Controllers\WorkOrderController@updateWorkOrder');
+Route::delete('workorder/{id}', 'App\Http\Controllers\WorkOrderController@deleteService');
+
 
 Route::get('users', 'App\Http\Controllers\UsersController@getAllUsers');
 Route::get('user/{id}', 'App\Http\Controllers\UsersController@getUser');

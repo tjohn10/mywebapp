@@ -3,11 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Models\Customers;
+use Illuminate\Contracts\Auth\Access\Gate;
 use Illuminate\Http\Request;
 
 class CustomerController extends Controller
 {
     public function getAllCustomers(){
+//
+//        if(!Gate::allows('isAnalyst')){
+//            abort(404, "sorry action not allowed");
+//        }
         $customers = Customers::get()->toJson(JSON_PRETTY_PRINT);
         return response($customers, 200);
     }
@@ -15,10 +20,12 @@ class CustomerController extends Controller
     public function createCustomer(Request $request) {
         $customer = new Customers;
         $customer->name = $request->name;
+
         $customer->email = $request->email;
         $customer->company = $request->company;
         $customer->address = $request->address;
         $customer->mobile_num = $request->mobile_num;
+        $customer->password = $request->password;
         $customer->save();
 
         return response()->json([

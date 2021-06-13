@@ -1,5 +1,6 @@
 <?php
 
+use Haruncpi\LaravelIdGenerator\IdGenerator;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -14,19 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/orders', function () {
+    $id = IdGenerator::generate(['table' => 'orders', 'length' => 10, 'prefix' =>'ORD-']);
+//output: INV-000001
 });
 
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-
-Route::get('/admin', 'App\Http\Controllers\AdminController@index');
-
-Route::get('/superadmin', 'App\Http\Controllers\SuperAdminController@index');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
