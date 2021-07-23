@@ -20,36 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50749589-e01d-4b38-a6ae-53ad12a7cc5a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Helpers/Helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ServiceController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/WorkOrderController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/AssignedOrder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/WorkOrders.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_11_123530_create_assigned_orders_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_26_154431_create_work_orders_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0496fb6b-3ec7-4cb1-9f22-8f631a6e9fa3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0496fb6b-3ec7-4cb1-9f22-8f631a6e9fa3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dhub-new.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dhub-new.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrdersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Job.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/OrderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Orders.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Review.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_14_175919_create_customers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_14_175919_create_customers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_27_012808_create_jobs_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_27_012826_create_reviews_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_02_204506_create_services_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_02_204506_create_services_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_03_112057_create_order_service_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_28_143321_create_orders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_28_143321_create_orders_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/AssignedOrder.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/AssignedOrder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -351,7 +324,14 @@
       <workItem from="1623417255932" duration="1306000" />
       <workItem from="1623488384606" duration="1185000" />
       <workItem from="1623528758446" duration="591000" />
-      <workItem from="1623582746513" duration="755000" />
+      <workItem from="1623582746513" duration="2852000" />
+      <workItem from="1623720060686" duration="1042000" />
+      <workItem from="1623844069009" duration="1168000" />
+      <workItem from="1623955657317" duration="1696000" />
+      <workItem from="1624024053985" duration="1784000" />
+      <workItem from="1625401303793" duration="822000" />
+      <workItem from="1626265804063" duration="1435000" />
+      <workItem from="1626954636449" duration="134000" />
     </task>
     <servers />
   </component>

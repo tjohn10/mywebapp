@@ -7,5 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class AssignedOrder extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+        'assigned_by',
+        'assigned_to',
+        'completed_at'
+    ];
+
+    public function order() {
+        return $this->belongsTo(Orders::class);
+    }
+
+    public function user() {
+        return $this->belongsTo(Users::class);
+    }
 }
