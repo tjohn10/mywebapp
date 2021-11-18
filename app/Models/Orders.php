@@ -18,7 +18,7 @@ class Orders extends Model
         return $this->belongsTo(Customers::class);
     }
 
-    public function service() {
-        return $this->belongsTo(Service::class);
-    }
+//    public function service() {
+//        return $this->belongsTo(Service::class);
+//    }
 }

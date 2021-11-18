@@ -32,7 +32,7 @@ class OrderController extends Controller
         $order->order_id = $order_id;
         $order->name = $request->name;
         $order->customer_id = $request->customer_id;
-        $order->service_id = $request->service_id;
+        $order->service = $request->service;
         $order->delivery_date = $request->delivery_date;
         $order->payment_option = $request->payment_option;
         $order->order_status = $request->order_status;
