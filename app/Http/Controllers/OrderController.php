@@ -21,7 +21,7 @@ class OrderController extends Controller
 
     public function index()
     {
-        $orders = Orders::with(['customer', 'service'])->get();
+        $orders = Orders::with(['customer'])->get();
         return response($orders, 200);
     }
 
